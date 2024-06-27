@@ -60,7 +60,7 @@ function LanguageDropdown() {
       <a onClick={e => e.preventDefault()}>
         <StyledSpace>
           <div className="text-[20px]">{selectedIcon}</div>
-          <div className="xxs:hidden md:block">{selectedLabel}</div>
+          <div >{selectedLabel}</div>
           <FontAwesomeIcon
             className="xxs:hidden md:block"
             icon={faChevronDown}

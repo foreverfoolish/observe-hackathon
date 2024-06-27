@@ -26,9 +26,9 @@ const StyledModal = styled(Modal)`
     height: 56px;
     margin: 0;
     display: flex;
-    @media (mix-width: 640px) {
+    /* @media (mix-width: 640px) {
       justify-content: center;
-    }
+    } */
   }
   .ant-modal-title {
     width: 100%;
@@ -103,10 +103,8 @@ export function CallHistory() {
         className="text-black hover:!text-black mr-3"
         onClick={() => setOpen(true)}
       >
-        <div className="xxs:hidden md:block">{t('callHistory')}</div>
-        <div className="xxs:block md:hidden">
-          <FontAwesomeIcon icon={faPhone} style={{ fontSize: '18px' }}></FontAwesomeIcon>
-        </div>
+        <div >{t('callHistory')}</div>
+    
       </Button>
       <StyledModal
         title={
